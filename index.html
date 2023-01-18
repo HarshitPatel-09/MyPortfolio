@@ -14,8 +14,8 @@
         <p title="My Name" id="navName">Harshit Patel</p>
         <p title="My Post" id="navPost">Front End Developer</p>
       </div>
-      <a href="#">Home</a>
-      <a href="#">About Me</a>
+      <a href="#homeSec">Home</a>
+      <a href="#aboutSec">About Me</a>
       <a href="#">Education</a>
       <a href="#">Portfolio</a>
       <a href="#">Contact Me</a>
@@ -23,7 +23,7 @@
     <div id="containerMain">
       <!---------- Home section start here ---------->
       <div id="homeSec">
-        <h3 id="homeHI">HI THERE !</h3>
+        <p id="homeHI">HI THERE !</p>
         <h1 id="homeName">I'M <span id="homeNameSpan">Harshit Patel</span></h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
@@ -38,10 +38,55 @@
         </p>
         <div id="homeMeAbtBtn">
           <img src="./icons/about.png" alt="" />
-          <a href="#">About Me</a>
+          <a href="#aboutSec">About Me</a>
         </div>
       </div>
       <!---------- Home section ends here ---------->
+
+      <!---------- About section start here ---------->
+      <div id="aboutSec">
+        <h2><span id="aboutHeadingSpan">About</span> Me</h2>
+        <div id="containsInfo">
+          <div id="infoInPoints">
+            <p class="aboutPoints">
+              Name: <span class="apSpan">Harshit Patel</span>
+            </p>
+            <p class="aboutPoints">Age: <span class="apSpan">14</span></p>
+            <p class="aboutPoints">
+              Qualifications: <span class="apSpan">W3S Certified</span>
+            </p>
+            <p class="aboutPoints">
+              Post: <span class="apSpan">Front End Developer</span>
+            </p>
+            <p class="aboutPoints">
+              Language: <span class="apSpan">Hindi</span>
+            </p>
+          </div>
+          <div id="infoInBoxes">
+            <div class="abBoxes">
+              <div class="aboutBoxes">
+                <span>1+</span>
+                <p class="boxPara">Years Of Experience</p>
+              </div>
+              <div class="aboutBoxes">
+                <span>5+</span>
+                <p class="boxPara">Projects Completed</p>
+              </div>
+            </div>
+            <div class="abBoxes">
+              <div class="aboutBoxes">
+                <span>9+</span>
+                <p class="boxPara">Happy Customers</p>
+              </div>
+              <div class="aboutBoxes">
+                <span>2</span>
+                <p class="boxPara">Awards Won</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---------- About section ends here ---------->
     </div>
   </body>
 </html>

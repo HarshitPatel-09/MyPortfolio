@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /**-------------------- Styling for 4k screens --------------------*/
 
 body {
@@ -108,6 +112,11 @@ body {
   margin-right: auto;
 }
 
+#homeSec ::selection {
+  background-color: #ae7cff;
+  color: black;
+}
+
 #homeHI {
   width: fit-content;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -119,7 +128,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 2px solid #ffc75f;
+  border-bottom: 2px solid #ae7cff;
+}
+
+#homeHI::selection {
+  background-color: #ae7cff;
+  color: black;
 }
 
 #homeName {
@@ -133,8 +147,18 @@ body {
   margin-bottom: 10px;
 }
 
+#homeName::selection {
+  background-color: #ae7cff;
+  color: black;
+}
+
 #homeNameSpan {
-  color: #f9bf51;
+  color: #ae7cff;
+}
+
+#homeNameSpan::selection {
+  background-color: #ae7cff;
+  color: black;
 }
 
 #homeSec > p {
@@ -146,6 +170,11 @@ body {
   margin-top: 0;
   color: white;
   margin-bottom: 0;
+}
+
+#homeSec > p::selection {
+  background-color: #ae7cff;
+  color: black;
 }
 
 #homeMeAbtBtn {
@@ -163,8 +192,18 @@ body {
   background-color: #444444;
 }
 
+#homeMeAbtBtn > img::selection {
+  background-color: #ae7cff;
+  color: black;
+}
+
+#homeMeAbtBtn > a::selection {
+  background-color: #ae7cff;
+  color: black;
+}
+
 #homeMeAbtBtn:hover {
-  background-color: #febe47;
+  background-color: #ae7cff;
   transition: 0.4s;
   box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.21);
 }
@@ -190,3 +229,118 @@ body {
 }
 
 /* Home Page styling ends here */
+/*! ----------------------------------------------------------------------------------------------------------------------------------- */
+/* About Page styling starts here */
+#aboutSec {
+  height: 99.6vh;
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#aboutSec ::selection {
+  background-color: #c72a6e;
+  color: white;
+}
+
+#aboutSec > h2 {
+  width: 90%;
+  color: white;
+  font-size: 45px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: auto;
+  letter-spacing: 2px;
+  font-weight: 700;
+  border-bottom: 3px solid #444444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#aboutHeadingSpan {
+  color: #c72a6e;
+  margin-right: 10px;
+}
+
+#containsInfo {
+  margin-top: 0px;
+  height: max-content;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 130px;
+}
+
+#infoInPoints {
+  height: 300px;
+  width: 500px;
+  margin-bottom: auto;
+}
+
+#infoInBoxes {
+  height: fit-content;
+  width: fit-content;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutPoints {
+  width: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  color: white;
+}
+
+.apSpan {
+  color: #c72a6e;
+  margin-left: 7px;
+}
+
+.aboutBoxes {
+  width: 180px;
+  background-color: #444444;
+  height: 180px;
+  border-radius: 10px;
+}
+
+.abBoxes {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.boxPara {
+  margin-top: 0;
+  font-weight: 750;
+  font-size: x-large;
+  width: min-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+}
+
+.aboutBoxes > span {
+  font-size: 50px;
+  font-weight: 500;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #c72a6e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+/* About Page styling ends here */
