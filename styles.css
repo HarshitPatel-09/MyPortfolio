@@ -33,11 +33,6 @@ body {
   margin-top: 40px;
   margin-bottom: 10px;
   border: 8px solid #ffc75f;
-  -webkit-transition: -webkit-transform 1s;
-}
-
-#navbar > img:hover {
-  -webkit-transform: rotate(720deg) translateZ(0);
 }
 
 #hContainer {
@@ -131,11 +126,6 @@ body {
   border-bottom: 2px solid #ae7cff;
 }
 
-#homeHI::selection {
-  background-color: #ae7cff;
-  color: black;
-}
-
 #homeName {
   width: fit-content;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -147,18 +137,8 @@ body {
   margin-bottom: 10px;
 }
 
-#homeName::selection {
-  background-color: #ae7cff;
-  color: black;
-}
-
 #homeNameSpan {
   color: #ae7cff;
-}
-
-#homeNameSpan::selection {
-  background-color: #ae7cff;
-  color: black;
 }
 
 #homeSec > p {
@@ -170,11 +150,6 @@ body {
   margin-top: 0;
   color: white;
   margin-bottom: 0;
-}
-
-#homeSec > p::selection {
-  background-color: #ae7cff;
-  color: black;
 }
 
 #homeMeAbtBtn {
@@ -193,11 +168,6 @@ body {
 }
 
 #homeMeAbtBtn > img::selection {
-  background-color: #ae7cff;
-  color: black;
-}
-
-#homeMeAbtBtn > a::selection {
   background-color: #ae7cff;
   color: black;
 }
@@ -243,8 +213,8 @@ body {
 }
 
 #aboutSec ::selection {
-  background-color: #c72a6e;
-  color: white;
+  background-color: #ff9671;
+  color: rgb(0, 0, 0);
 }
 
 #aboutSec > h2 {
@@ -263,7 +233,7 @@ body {
 }
 
 #aboutHeadingSpan {
-  color: #c72a6e;
+  color: #ff9671;
   margin-right: 10px;
 }
 
@@ -302,7 +272,7 @@ body {
 }
 
 .apSpan {
-  color: #c72a6e;
+  color: #ff9671;
   margin-left: 7px;
 }
 
@@ -320,8 +290,22 @@ body {
 }
 
 .boxPara {
+  margin-top: 5px;
+  font-weight: 700;
+  font-size: x-large;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+
+.boxPara2 {
   margin-top: 0;
-  font-weight: 750;
+  font-weight: 700;
   font-size: x-large;
   width: min-content;
   margin-left: auto;
@@ -329,6 +313,12 @@ body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: white;
+  letter-spacing: 1px;
+}
+
+.paraAwards {
+  width: max-content;
+  margin-top: 10px;
 }
 
 .aboutBoxes > span {
@@ -336,11 +326,139 @@ body {
   font-weight: 500;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #c72a6e;
+  color: #ff9671;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 0;
+  -webkit-transition: -webkit-transform 0.5s;
+}
+
+.aboutBoxes:hover > span {
+  transform: scale(120%);
+  transition: 0.5s;
 }
 
 /* About Page styling ends here */
+/*! ------------------------------------------------------------------------------------------------------------------------------------- */
+/*Services page styling starts here*/
+#serviceSec {
+  width: 90%;
+  height: 400px;
+  background-color: #444444;
+  margin-bottom: 50px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  scroll-margin-top: 30px;
+}
+
+#serviceSec ::selection {
+  background-color: #00c9a7;
+  color: rgb(0, 0, 0);
+}
+
+#serviceSec > h2 {
+  width: 90%;
+  height: 70px;
+  color: white;
+  font-size: 45px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 20px;
+  margin-bottom: auto;
+  letter-spacing: 2px;
+  font-weight: 700;
+  border-bottom: 3px solid #666666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+
+#serviceH2Span {
+  color: #00c9a7;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+#services {
+  width: 90%;
+  height: 280px;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.serviceBox {
+  width: 32%;
+  height: 95%;
+  background-color: black;
+  border-radius: 15px;
+  -webkit-transition: -webkit-transform 0.5s;
+}
+
+.serviceBox:hover {
+  transform: scale(103%);
+  transition: 0.5s;
+}
+/*Services page styling ends here*/
+
+/* Portfolio section styling starts here */
+#portfolioSec {
+  height: 99.6vh;
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: gray;
+  margin-bottom: 5px;
+}
+
+#portfolioSec ::selection {
+  background-color: #d65db1;
+  color: rgb(0, 0, 0);
+}
+
+#portfolioSec > h3 {
+  width: fit-content;
+  height: fit-content;
+  font-weight: 700;
+  font-size: larger;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #666666;
+}
+
+#portfolioSec > h2 {
+  width: 90%;
+  color: white;
+  font-size: 45px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: auto;
+  letter-spacing: 2px;
+  font-weight: 700;
+  border-bottom: 3px solid #444444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+
+#portHeadSpan {
+  color: #d65db1;
+  margin-left: 5px;
+} 
+
+/* Portfolio section styling ends here */
