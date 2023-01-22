@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
   </head>
   <body>
-    <div id="navbar">
+    <div id="navbar" class="animate__animated animate__fadeInLeft">
       <img src="./images/boy.jpg" alt="" />
       <div id="hContainer">
         <p title="My Name" id="navName">Harshit Patel</p>
@@ -94,9 +98,9 @@
       <div id="serviceSec">
         <h2>My <span id="serviceH2Span">Services</span></h2>
         <div id="services">
-          <div class="serviceBox"></div>
-          <div class="serviceBox"></div>
-          <div class="serviceBox"></div>
+          <div class="serviceBox"><img src="./images/boy.jpg" alt=""></div>
+          <div class="serviceBox"><img src="./images/boy.jpg" alt=""></div>
+          <div class="serviceBox"><img src="./images/boy.jpg" alt=""></div>
         </div>
       </div>
       <!-- Services section ends here -->
@@ -104,18 +108,7 @@
       <div id="portfolioSec">
         <h3>Portfolio</h3>
         <h2>Latest <span id="portHeadSpan">Projects</span></h2>
-        <div id="portBoxSenior">
-          <div class="portBox"></div>
-          <div class="portBox"></div>
-          <div class="portBox"></div>
-          <div class="portBox"></div>
-          <div class="portBox"></div>
-          <div class="portBox"></div>
-          <div class="portBox"></div>
-          <div class="portBox"></div>
-          <div class="portBox"></div>
-        </div>
-      </div>
+        <div id="projectsGallery"></div>
       <!-- Portfolio section ends here -->
     </div>
   </body>

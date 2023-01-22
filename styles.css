@@ -401,11 +401,12 @@ body {
   background-color: black;
   border-radius: 15px;
   -webkit-transition: -webkit-transform 0.5s;
+  overflow: hidden;
 }
 
-.serviceBox:hover {
-  transform: scale(103%);
-  transition: 0.5s;
+.serviceBox > img {
+  width: 100%;
+  height: 100%;
 }
 /*Services page styling ends here*/
 
@@ -419,7 +420,6 @@ body {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  background-color: gray;
   margin-bottom: 5px;
 }
 
@@ -459,6 +459,6 @@ body {
 #portHeadSpan {
   color: #d65db1;
   margin-left: 5px;
-} 
+}
 
 /* Portfolio section styling ends here */
