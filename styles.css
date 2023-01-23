@@ -2,18 +2,13 @@ html {
   scroll-behavior: smooth;
 }
 
-/**-------------------- Styling for 4k screens --------------------*/
+/**-------------------- Styling for big screens --------------------*/
 
 body {
   margin: 0%;
   background-color: #161614;
   display: flex;
   justify-content: space-between;
-}
-
-::selection {
-  background-color: #ffc75f;
-  color: black;
 }
 
 /* Navbar styling starts here */
@@ -25,6 +20,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#navbar ::selection {
+  background-color: #ffc75f;
+  color: black;
 }
 
 #navbar > img {
@@ -345,9 +345,7 @@ body {
 #serviceSec {
   width: 90%;
   height: 400px;
-  background-color: #444444;
-  margin-bottom: 50px;
-  border-radius: 15px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -396,20 +394,84 @@ body {
 }
 
 .serviceBox {
-  width: 32%;
-  height: 95%;
+  width: 28%;
+  height: 88%;
   background-color: black;
-  border-radius: 15px;
+  border-radius: 10px;
   -webkit-transition: -webkit-transform 0.5s;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .serviceBox > img {
   width: 100%;
   height: 100%;
 }
-/*Services page styling ends here*/
 
+.serviceBox:hover {
+  transform: scale(105%);
+  transition: 0.5s;
+}
+/*Services page styling ends here*/
+/*! ------------------------------------------------------------------------------------------------------------------------------------- */
+/*Hire Me page styling starts here*/
+#hireSec {
+  height: 250px;
+  width: 100%;
+  background-color: #232321;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+#hireSec ::selection {
+  background-color: #00c9a7;
+  color: rgb(0, 0, 0);
+}
+
+#hireSec > p {
+  padding-top: 30px;
+  width: fit-content;
+  height: max-content;
+  font-size: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  font-weight: bolder;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#hireSec > a {
+  border-radius: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  text-decoration: none;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: x-large;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: grey;
+  -webkit-transition: -webkit-transform 0.3s;
+}
+
+#hireSec > a:hover {
+  background-color: #00c9a7;
+  transform: scale(105%);
+  transition: 0.5s;
+  box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.21);
+}
+/* Hire Me Page styling ends here */
+/*! ------------------------------------------------------------------------------------------------------------------------------------- */
 /* Portfolio section styling starts here */
 #portfolioSec {
   height: 99.6vh;
@@ -420,7 +482,8 @@ body {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  margin-top: 25px;
 }
 
 #portfolioSec ::selection {
@@ -428,7 +491,26 @@ body {
   color: rgb(0, 0, 0);
 }
 
-#portfolioSec > h3 {
+#projectHead {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: auto;
+}
+
+#projectsGallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: auto;
+}
+
+#portfolioSec > div > h3 {
   width: fit-content;
   height: fit-content;
   font-weight: 700;
@@ -440,7 +522,18 @@ body {
   color: #666666;
 }
 
-#portfolioSec > h2 {
+#projectsGallery > img {
+  width: 60%;
+  border-radius: 25px;
+  -webkit-transition: -webkit-transform 0.5s;
+}
+
+#projectsGallery > img:hover {
+  transform: scale(105%);
+  transition: 0.5s;
+}
+
+#portfolioSec > div > h2 {
   width: 90%;
   color: white;
   font-size: 45px;
@@ -460,5 +553,81 @@ body {
   color: #d65db1;
   margin-left: 5px;
 }
-
 /* Portfolio section styling ends here */
+/*! ------------------------------------------------------------------------------------------------------------------------------------------ */
+/* Contact Page styling starts here */
+#contactSec {
+  height: 40vh;
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+#contactSec > h2 {
+  width: 90%;
+  color: white;
+  font-size: 45px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-bottom: auto;
+  letter-spacing: 2px;
+  font-weight: 700;
+  border-bottom: 3px solid #444444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+
+#contactSec > h2 > span {
+  color: rgb(235, 83, 83);
+}
+
+#contactSec > p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: xx-large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+#contactSec > p > span {
+  width: fit-content;
+  height: fit-content;
+}
+
+#contactimgbox {
+  width: 90%;
+  height: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#contactimgbox > img {
+  width: 50px;
+  border-radius: 1000px;
+  background-position: center;
+  -webkit-transition: -webkit-transform 0.3s;
+}
+
+#contactimgbox > img:hover {
+  transform: scale(108%);
+  transition: 0.3s;
+}
+/* Contact Page styling ends here */
