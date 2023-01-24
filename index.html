@@ -12,7 +12,7 @@
   />
   </head>
   <body>
-    <div id="navbar" class="animate__animated animate__fadeInLeft">
+    <div id="navbar">
       <img src="./images/myself.jpg" alt="" />
       <div id="hContainer">
         <p title="My Name" id="navName">Harshit Patel</p>
@@ -28,7 +28,7 @@
       <!---------- Home section start here ---------->
       <div id="homeSec">
         <p id="homeHI">HI THERE !</p>
-        <h1 id="homeName">I'M <span id="homeNameSpan">Harshit Patel</span></h1>
+        <h1 id="homeName" class="animate__animated animate__bounceInDown">I'M <span id="homeNameSpan">Harshit Patel</span></h1>
         <p>
           I am a front-end web developer. I can provide clean code and pixel perfect design. <br> I can provide clean code and pixel perfect design. <br> I also make the website more & more interactive with web animations. <br> A responsive design makes your website accessible to all users, regardless of their device. <br> For more information visit About page.
         </p>
@@ -90,9 +90,21 @@
       <div id="serviceSec">
         <h2>My <span id="serviceH2Span">Services</span></h2>
         <div id="services">
-          <div class="serviceBox"><img src="./images/webdev.png " alt=""></div>
-          <div class="serviceBox"><img src="./images/webdev.png " alt=""></div>
-          <div class="serviceBox"><img src="./images/webdev.png " alt=""></div>
+          <div  title="Web Designing" class="serviceBox"><img 
+            onclick="window.open('https://keep.google.com/u/0/#NOTE/1LUU4qcKZtWcpy0fTuec9bz_XbqZcPnOLQNjSlbHPwsSFsIlV0AgPBy18mQly94M')"
+            style="cursor: pointer"
+            target="_blank"
+            src="./images/webdesign.jpg " alt=""></div>
+          <div title="UI/UX Designing" class="serviceBox"><img 
+            onclick="window.open('https://keep.google.com/u/0/#NOTE/1b6NMp6eMNNj3brktas6WCWDCTQrJU5Owee8_Nm5GkSPJdDN7M15Okfu0q8U5zg')"
+            style="cursor: pointer"
+            target="_blank" 
+            src="./images/ui_ux.jpg " alt=""></div>
+          <div title="Backend Development" class="serviceBox"><img 
+            onclick="window.open('https://keep.google.com/u/0/#NOTE/1osadkWkkv8JzhDlnzri4kpdfsfoByonAajvahhmJ2TAGdAyadjfoxYxOhPywsA')"
+            style="cursor: pointer"
+            target="_blank" 
+            src="./images/backend.webp " alt=""></div>
         </div>
       </div>
       <!-- Services section ends here -->
@@ -142,19 +154,19 @@
         <div id="contactimgbox">
           <img
           title="facebook"
-          onclick="window.open('')"
+          onclick="window.open('https://www.facebook.com/profile.php?id=100089183302667')"
           style="cursor: pointer"
           target="_blank" 
           src="./icons/facebook.jpg" alt="social">
         <img 
         title="instagram"
-          onclick="window.open('')"
+          onclick="window.open('https://www.instagram.com/harrycodes_09')"
           style="cursor: pointer"
           target="_blank"
           src="./icons/instagram.jpg" alt="social">
         <img 
         title="mail"
-        onclick="window.open('')"
+        onclick="window.open('mailto:harrycodes2009@gmail.com')"
         style="cursor: pointer"
         target="_blank"
         src="./icons/mail.jpg" alt="social">
@@ -164,3 +176,5 @@
     
   </body>
 </html>
+
+
